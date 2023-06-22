@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="205.0" prefWidth="760.0" style="-fx-background-color: #3065AC; -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ActEstItemController">
+   <children>
+      <Button fx:id="idBtnEntregarActividad" layoutX="444.0" layoutY="158.0" mnemonicParsing="false" onAction="#btnEntregarActividad" text="Entregar actividad" />
+      <Label fx:id="lbNombreAct" layoutX="93.0" layoutY="14.0" prefHeight="35.0" prefWidth="611.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbFechaInicio" layoutX="58.0" layoutY="71.0" prefHeight="21.0" prefWidth="386.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Label>
+      <Label fx:id="lbFechaCierre" layoutX="58.0" layoutY="109.0" prefHeight="21.0" prefWidth="386.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Label>
+      <Button fx:id="idBtnModificarEntrega" layoutX="219.0" layoutY="158.0" mnemonicParsing="false" onAction="#btnModificarEntrega" prefHeight="31.0" prefWidth="140.0" text="Modificar entrega" />
+      <Button fx:id="idBtnComprobar" layoutX="133.0" layoutY="158.0" mnemonicParsing="false" onAction="#btnComprobar" text="Button" />
+   </children>
+</AnchorPane>

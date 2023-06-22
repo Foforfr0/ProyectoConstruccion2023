@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#btnConsultarAct" prefHeight="660.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ActividadesEstudianteController">
+   <children>
+      <Label fx:id="lbNombre" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="869.0">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="93.0" layoutY="108.0" prefHeight="455.0" prefWidth="729.0">
+         <content>
+            <GridPane fx:id="gridActividades" prefHeight="125.0" prefWidth="284.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="93.0" layoutY="594.0" mnemonicParsing="false" onAction="#btnVolver" prefHeight="31.0" prefWidth="114.0" text="Volver" />
+      <Button fx:id="idBtnGetId" layoutX="650.0" layoutY="594.0" mnemonicParsing="false" onAction="#btnGetCurso" text="GetID" />
+      <Button fx:id="idBtnxdd" layoutX="383.0" layoutY="594.0" mnemonicParsing="false" onAction="#xdddddddd" text="Button" />
+   </children>
+</AnchorPane>

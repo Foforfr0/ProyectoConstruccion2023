@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FormularioCA_ConsultaController">
+   <children>
+      <Label fx:id="lbTituloFormulario" layoutX="42.0" layoutY="35.0" prefHeight="35.0" prefWidth="326.0" text="Consultar Cuerpo Academico">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="83.0" text="Clave">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfClave" editable="false" layoutX="42.0" layoutY="103.0" prefHeight="25.0" prefWidth="94.0" />
+      <Label layoutX="154.0" layoutY="83.0" text="Grado de Consolidacion">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="140.0" text="Nombre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNombre" editable="false" layoutX="42.0" layoutY="160.0" prefHeight="25.0" prefWidth="326.0" />
+      <TextField fx:id="tfDesAdscripcion" editable="false" layoutX="398.0" layoutY="160.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="399.0" layoutY="140.0" text="Adscripcion">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="83.0" text="Fecha de Registro">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="chbAcademicoResponsable" layoutX="42.0" layoutY="231.0" prefHeight="25.0" prefWidth="396.0" />
+      <Label layoutX="42.0" layoutY="200.0" text="Seleccion del Academico Responsable">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableUsuarios" layoutX="43.0" layoutY="323.0" prefHeight="226.0" prefWidth="505.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="133.0" text="Nombres" />
+            <TableColumn fx:id="colApellidoPaterno" prefWidth="155.0" text="Apellido Paterno" />
+            <TableColumn fx:id="colApellidoMaterno" prefWidth="186.0" text="Apellido Materno" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="cbGradoConsodilacion" layoutX="154.0" layoutY="103.0" prefHeight="25.0" prefWidth="229.0" />
+      <Label layoutX="43.0" layoutY="294.0" text="Seleccion de Academicos Integrantes">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelarConsulta" layoutX="487.0" layoutY="578.0" mnemonicParsing="false" onAction="#btnCancelarConsulta" text="Cancelar" />
+      <DatePicker fx:id="dpFechaRegistro" editable="false" layoutX="399.0" layoutY="103.0" />
+   </children>
+</AnchorPane>

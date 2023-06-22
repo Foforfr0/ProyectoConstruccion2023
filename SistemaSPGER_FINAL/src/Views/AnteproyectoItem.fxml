@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="147.0" prefWidth="877.0" style="-fx-background-color: #3065AC; -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AnteproyectoItemController">
+   <children>
+      <Label fx:id="lbNomreAnteproyecto" layoutX="69.0" layoutY="4.0" prefHeight="35.0" prefWidth="759.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font></Label>
+      <Label fx:id="lbEstadoAnteproyecto" layoutX="168.0" layoutY="47.0" prefHeight="21.0" prefWidth="278.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font></Label>
+      <Button fx:id="idBtnModificar" layoutX="370.0" layoutY="104.0" mnemonicParsing="false" onAction="#btnModificarAnteproyecto" prefHeight="31.0" prefWidth="137.0" text="Modificar" />
+      <Button fx:id="idBtnPostular" layoutX="168.0" layoutY="104.0" mnemonicParsing="false" onAction="#btnPostularAnteproyecto" prefHeight="31.0" prefWidth="137.0" text="Postular" />
+      <Label fx:id="lbEstado" layoutX="72.0" layoutY="47.0" prefHeight="21.0" prefWidth="96.0" text="Estado:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="idBtnGestionarEstudiantes" layoutX="568.0" layoutY="104.0" mnemonicParsing="false" onAction="#btnGestionarEstudiantes" prefHeight="31.0" prefWidth="173.0" text="Gestionar estudiantes" />
+   </children>
+</AnchorPane>

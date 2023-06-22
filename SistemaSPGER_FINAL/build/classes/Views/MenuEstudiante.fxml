@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="673.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuEstudianteController">
+   <children>
+      <Label fx:id="lbMisCursos" layoutX="397.0" layoutY="14.0" text="Mis cursos">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="95.0" layoutY="118.0" prefHeight="438.0" prefWidth="794.0">
+         <content>
+            <GridPane fx:id="gridCursos" prefHeight="126.0" prefWidth="413.0">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="49.0" fitWidth="68.0" layoutX="24.0" layoutY="27.0" onMouseClicked="#clicCerrarSesion" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/logoutIcono.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

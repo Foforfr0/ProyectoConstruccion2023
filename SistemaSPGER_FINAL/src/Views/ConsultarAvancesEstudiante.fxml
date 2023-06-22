@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="636.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConsultarAvancesEstudianteController">
+   <children>
+      <ScrollPane layoutX="20.0" layoutY="75.0" prefHeight="540.0" prefWidth="355.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="352.0">
+               <children>
+                  <TableView fx:id="tvAvances" prefHeight="538.0" prefWidth="355.0">
+                     <columns>
+                        <TableColumn fx:id="ctNumAvance" prefWidth="117.0" text="Número de avance" />
+                        <TableColumn fx:id="ctFechaInicio" minWidth="0.0" prefWidth="116.0" text="Fecha de inicio" />
+                        <TableColumn fx:id="ctFechaCierre" prefWidth="121.0" text="Fecha de cierre" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="386.0" layoutY="75.0" prefHeight="261.0" prefWidth="344.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="257.0" prefWidth="342.0">
+               <children>
+                  <Label fx:id="lbNumAvance" layoutX="14.0" layoutY="14.0" text="Numero de avance: ">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tfDescripcion" editable="false" layoutX="10.0" layoutY="53.0" prefHeight="138.0" prefWidth="323.0" wrapText="true" />
+                  <ImageView fx:id="ivArchivoAvance" fitHeight="46.0" fitWidth="38.0" layoutX="301.0" layoutY="217.0" onMouseClicked="#clicDescargarAvance" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Imagenes/archivoIcono.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="36.0" text="Descripción: " />
+                  <Label fx:id="lbNombreArchivoAvance" layoutX="13.0" layoutY="204.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="386.0" layoutY="344.0" prefHeight="271.0" prefWidth="345.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="268.0" prefWidth="343.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="15.0" text="Entrega del avance">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="38.0" text="Descripción: " />
+                  <TextArea fx:id="tfDescrpEntrega" editable="false" layoutX="10.0" layoutY="55.0" prefHeight="138.0" prefWidth="323.0" wrapText="true" />
+                  <Label fx:id="lbFechaEntr" alignment="TOP_LEFT" layoutX="172.0" prefHeight="9.0" prefWidth="168.0" text="Fecha de entrega: " wrapText="true" />
+                  <ImageView fx:id="ivArchivoEntrega" disable="true" fitHeight="46.0" fitWidth="38.0" layoutX="302.0" layoutY="227.0" onMouseClicked="#clicDescargarEntrega" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Imagenes/archivoIcono.png" />
+                     </image></ImageView>
+                  <Button fx:id="btAceptar" disable="true" layoutX="11.0" layoutY="240.0" mnemonicParsing="false" onAction="#clicAceptar" prefWidth="80.0" text="Aceptar" />
+                  <Button fx:id="btCancelar" disable="true" layoutX="102.0" layoutY="240.0" mnemonicParsing="false" onAction="#clicCancelar" prefWidth="80.0" text="Cancelar" />
+                  <Button fx:id="btAdjuntar" disable="true" layoutX="11.0" layoutY="197.0" mnemonicParsing="false" onAction="#clicAdjuntar" text="Adjuntar archivo" />
+                  <Label fx:id="lbNombreArchivoEntrega" layoutX="121.0" layoutY="200.0" />
+                  <Label fx:id="lbCalificacion" layoutX="172.0" layoutY="16.0" text="Calificación: " />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="499.0" layoutY="25.0" text="Entrega de avances">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicVolver" prefWidth="80.0" text="Volver" />
+      <Button fx:id="btEntregar" layoutX="112.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicEntregar" prefWidth="80.0" text="Entregar">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Button fx:id="btModificar" disable="true" layoutX="205.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicModificar" prefWidth="80.0" text="Modificar" visible="false" />
+   </children>
+</AnchorPane>

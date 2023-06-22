@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConsultarAvancesProfesorController">
+   <children>
+      <Label layoutX="517.0" layoutY="25.0" text="Consultar avances">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="390.0" layoutY="72.0" prefHeight="451.0" prefWidth="344.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="342.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Numero de avance: ">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tfDescripcion" editable="false" layoutX="10.0" layoutY="86.0" prefHeight="200.0" prefWidth="323.0" wrapText="true" />
+                  <Button fx:id="btAdjuntar" disable="true" layoutX="14.0" layoutY="290.0" mnemonicParsing="false" onAction="#clicAdjuntar" text="Adjuntar archivo" />
+                  <ImageView fx:id="ivArchivo" disable="true" fitHeight="56.0" fitWidth="51.0" layoutX="277.0" layoutY="290.0" onMouseClicked="#clicDescargar" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Imagenes/archivoIcono.png" />
+                     </image></ImageView>
+                  <Button fx:id="btAceptar" disable="true" layoutX="10.0" layoutY="416.0" mnemonicParsing="false" onAction="#clicAceptar" prefWidth="80.0" text="Aceptar" visible="false" />
+                  <DatePicker fx:id="dpInicio" layoutX="49.0" layoutY="44.0" prefHeight="25.0" prefWidth="119.0" />
+                  <Label layoutX="14.0" layoutY="48.0" text="Inicia: " />
+                  <Label layoutX="175.0" layoutY="48.0" text="Cierra: " />
+                  <DatePicker fx:id="dpCierra" editable="false" layoutX="212.0" layoutY="44.0" prefHeight="25.0" prefWidth="121.0" />
+                  <Button fx:id="btCancelar" disable="true" layoutX="101.0" layoutY="416.0" mnemonicParsing="false" onAction="#clicCancelar" prefWidth="80.0" text="Cancelar" visible="false" />
+                  <Label fx:id="lbNombreArchivo" layoutX="14.0" layoutY="315.0" />
+                  <TextField fx:id="tfNumAvance" editable="false" layoutX="152.0" layoutY="13.0" prefHeight="25.0" prefWidth="34.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane layoutX="20.0" layoutY="72.0" prefHeight="451.0" prefWidth="355.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="448.0" prefWidth="352.0">
+               <children>
+                  <TableView fx:id="tvAvances" prefHeight="451.0" prefWidth="355.0">
+                    <columns>
+                      <TableColumn fx:id="ctNumAvance" prefWidth="129.0" text="Número de avance" />
+                        <TableColumn fx:id="ctFechaInicio" minWidth="0.0" prefWidth="115.0" text="Fecha de inicio" />
+                        <TableColumn fx:id="ctFechaCierre" prefWidth="110.0" text="Fecha de cierre" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="btCrear" layoutX="113.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicCrear" prefWidth="80.0" text="Crear" />
+      <Button fx:id="btEliminar" layoutX="310.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicEliminar" prefWidth="80.0" text="Eliminar" />
+      <Button fx:id="btModificar" layoutX="211.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicModificar1" prefWidth="80.0" text="Modificar" />
+      <Button layoutX="20.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicVolver" prefWidth="80.0" text="Volver" />
+      <Button fx:id="btCalificar" layoutX="408.0" layoutY="30.0" mnemonicParsing="false" onAction="#clicCalificar" prefWidth="80.0" text="Calificar" />
+   </children>
+</AnchorPane>

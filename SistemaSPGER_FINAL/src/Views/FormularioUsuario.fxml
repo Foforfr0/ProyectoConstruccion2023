@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FormularioUsuarioController">
+   <children>
+      <Label fx:id="lbTituloFormulario" layoutX="32.0" layoutY="25.0" prefHeight="35.0" prefWidth="326.0" text="Registrar usuario">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="87.0" text="Matrícula">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="87.0" text="Nombres">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="174.0" text="Apellido pateno">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="174.0" text="Apellido materno">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="87.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="174.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMatricula" layoutX="26.0" layoutY="109.0" />
+      <TextField fx:id="tfNombres" layoutX="254.0" layoutY="109.0" prefHeight="14.0" prefWidth="187.0" />
+      <TextField fx:id="tfApellidoPaterno" layoutX="26.0" layoutY="194.0" />
+      <TextField fx:id="tfApellidoMaterno" layoutX="254.0" layoutY="194.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="tfUsername" layoutX="523.0" layoutY="109.0" prefHeight="25.0" prefWidth="166.0" />
+      <ComboBox fx:id="cbTipoUsuario" layoutX="523.0" layoutY="292.0" prefWidth="150.0" />
+      <Label fx:id="lbTipoUsuario" layoutX="550.0" layoutY="270.0" text="Tipo de usuario">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelarRegistro" layoutX="26.0" layoutY="537.0" mnemonicParsing="false" onAction="#btnCancelarRegistro" prefHeight="25.0" prefWidth="149.0" text="Cancelar " />
+      <Button fx:id="btnRegistrarUsuarioTexto" layoutX="523.0" layoutY="537.0" mnemonicParsing="false" onAction="#btnRegistrarUsuario" prefHeight="25.0" prefWidth="149.0" text="Registrar usuario" />
+      <PasswordField fx:id="tfPassword" layoutX="525.0" layoutY="194.0" prefHeight="25.0" prefWidth="166.0" />
+   </children>
+</AnchorPane>

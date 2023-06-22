@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CrearAvanceController">
+   <children>
+      <Label layoutX="475.0" layoutY="32.0" text="Crear avance">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="idBtnCancelar" layoutX="75.0" layoutY="528.0" mnemonicParsing="false" onAction="#btnCancelar" prefHeight="25.0" prefWidth="95.0" text="Cancelar" />
+      <Button layoutX="525.0" layoutY="528.0" mnemonicParsing="false" onAction="#btnCrearActividad" text="Crear avance" />
+      <TextArea fx:id="tfDescripcion" layoutX="74.0" layoutY="136.0" prefHeight="171.0" prefWidth="536.0" />
+      <Label layoutX="311.0" layoutY="119.0" text="Descripción" />
+      <DatePicker fx:id="dpFechaInicio" layoutX="74.0" layoutY="337.0" />
+      <Label layoutX="122.0" layoutY="320.0" text="Fecha de inicio" />
+      <Label layoutX="358.0" layoutY="320.0" text="Fecha de cierre" />
+      <DatePicker fx:id="dpFechaCierre" layoutX="311.0" layoutY="337.0" />
+      <Button layoutX="70.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnAdjuntarArchivo" text="Adjuntar archivo" />
+      <Pane fx:id="panel" layoutX="207.0" layoutY="385.0" prefHeight="134.0" prefWidth="159.0" />
+      <Button layoutX="79.0" layoutY="37.0" mnemonicParsing="false" onAction="#btnID" prefHeight="25.0" prefWidth="62.0" text="ID" />
+      <Label layoutX="79.0" layoutY="98.0" text="Numero de avance: " />
+      <TextField fx:id="tfNumAvance" layoutX="185.0" layoutY="94.0" onInputMethodTextChanged="#validarNumAvance" prefHeight="25.0" prefWidth="44.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="217.0" prefWidth="748.0" style="-fx-background-color: #3065AC; -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CursoEstudianteItemController">
+   <children>
+      <Button layoutX="71.0" layoutY="172.0" mnemonicParsing="false" onAction="#btnConsultarActividades" prefHeight="31.0" prefWidth="208.0" text="Consultar actividades" />
+      <Button layoutX="425.0" layoutY="172.0" mnemonicParsing="false" onAction="#btnConsultarAvances" prefHeight="31.0" prefWidth="208.0" text="Consultar avances" />
+      <Label fx:id="lbNombreCurso" layoutX="91.0" layoutY="14.0" prefHeight="35.0" prefWidth="589.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbPeriodo" layoutX="91.0" layoutY="79.0" prefHeight="27.0" prefWidth="328.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

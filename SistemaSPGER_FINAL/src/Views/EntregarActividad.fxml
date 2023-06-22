@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="774.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EntregarActividadController">
+   <children>
+      <Label fx:id="lbNombreAct" layoutX="65.0" layoutY="14.0" prefHeight="35.0" prefWidth="750.0">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="69.0" layoutY="716.0" mnemonicParsing="false" onAction="#btnVolver" prefHeight="31.0" prefWidth="99.0" text="Volver" />
+      <Button layoutX="679.0" layoutY="716.0" mnemonicParsing="false" onAction="#btnEntregarAct" text="Entregar actividad" />
+      <TextFlow fx:id="textAct" layoutX="69.0" layoutY="83.0" prefHeight="200.0" prefWidth="750.0" />
+      <TextArea fx:id="textDescripcion" layoutX="70.0" layoutY="297.0" prefHeight="200.0" prefWidth="750.0" />
+      <Button layoutX="70.0" layoutY="537.0" mnemonicParsing="false" onAction="#btnAdjuntarArchivo" text="Adjuntar archivo" />
+      <Pane fx:id="panel" layoutX="244.0" layoutY="516.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

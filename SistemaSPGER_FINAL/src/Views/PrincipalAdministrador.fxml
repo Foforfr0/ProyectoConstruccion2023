@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PrincipalAdministradorController">
+   <children>
+      <Button fx:id="btnGestionUsuariosVentana" layoutX="148.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnGestionUsuarios" prefHeight="72.0" prefWidth="212.0" text="Gestión de usuarios" />
+      <Label layoutX="360.0" layoutY="14.0" text="Administración SPGER" textFill="#5b98cf">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="536.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnGestionCA" prefHeight="72.0" prefWidth="212.0" text="Gestión de cuerpo academico" />
+      <ImageView fitHeight="49.0" fitWidth="68.0" layoutX="14.0" layoutY="17.0" onMouseClicked="#clicCerrarSesion" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/logoutIcono.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

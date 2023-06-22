@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="149.0" prefWidth="669.0" style="-fx-background-color: #3065AC; -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ActividadCursoItemController">
+   <children>
+      <Label fx:id="lbNombre" layoutX="54.0" layoutY="14.0" prefHeight="25.0" prefWidth="579.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="166.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnEntregas" prefHeight="25.0" prefWidth="91.0" text="Entregas" />
+      <Button layoutX="396.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnModificar" prefHeight="25.0" prefWidth="91.0" text="Modificar" />
+   </children>
+</AnchorPane>

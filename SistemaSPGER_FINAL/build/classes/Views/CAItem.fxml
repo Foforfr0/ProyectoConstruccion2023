@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="157.0" prefWidth="660.0" style="-fx-background-color: #3065AC; -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CAItemController">
+   <children>
+      <Label fx:id="lbNombreCA" layoutX="410.0" layoutY="4.0" prefHeight="21.0" prefWidth="222.0" textFill="WHITE" />
+      <Label fx:id="lbFechaRegistro" layoutX="14.0" layoutY="42.0" prefHeight="21.0" prefWidth="134.0" />
+      <Label fx:id="lbClave" layoutX="14.0" layoutY="70.0" prefHeight="21.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

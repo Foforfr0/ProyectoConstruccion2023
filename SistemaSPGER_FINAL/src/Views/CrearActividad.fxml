@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CrearActividadController">
+   <children>
+      <Label layoutX="316.0" layoutY="20.0" text="Crear actividad">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="idBtnCancelar" layoutX="75.0" layoutY="656.0" mnemonicParsing="false" onAction="#btnCancelar" prefHeight="25.0" prefWidth="95.0" text="Cancelar" />
+      <Button layoutX="559.0" layoutY="656.0" mnemonicParsing="false" onAction="#btnCrearActividad" text="Crear actividad" />
+      <TextField fx:id="tfNombre" layoutX="79.0" layoutY="127.0" prefHeight="31.0" prefWidth="599.0" />
+      <Label layoutX="353.0" layoutY="106.0" text="Nombre" />
+      <TextArea fx:id="tfDescripcion" layoutX="79.0" layoutY="195.0" prefHeight="171.0" prefWidth="599.0" />
+      <Label layoutX="341.0" layoutY="174.0" text="Descripción" />
+      <Label layoutX="619.0" layoutY="403.0" prefHeight="21.0" prefWidth="48.0" text="Valor" />
+      <TextField fx:id="tfValor" layoutX="592.0" layoutY="430.0" prefHeight="25.0" prefWidth="86.0" />
+      <DatePicker fx:id="dpFechaInicio" layoutX="79.0" layoutY="430.0" />
+      <Label layoutX="139.0" layoutY="403.0" text="Fecha de inicio" />
+      <Label layoutX="391.0" layoutY="403.0" text="Fecha de cierre" />
+      <DatePicker fx:id="dpFechaCierre" layoutX="332.0" layoutY="430.0" />
+      <Button layoutX="75.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnAdjuntarArchivo" text="Adjuntar archivo" />
+      <Pane fx:id="panel" layoutX="229.0" layoutY="476.0" prefHeight="171.0" prefWidth="174.0" />
+      <Button layoutX="79.0" layoutY="37.0" mnemonicParsing="false" onAction="#btnID" prefHeight="25.0" prefWidth="62.0" text="ID" />
+   </children>
+</AnchorPane>

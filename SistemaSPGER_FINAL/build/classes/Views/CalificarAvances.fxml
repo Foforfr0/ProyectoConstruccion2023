@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CalificarAvancesController">
+   <children>
+      <Label layoutX="513.0" layoutY="14.0" text="Calificar actividad">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="20.0" layoutY="32.0" prefHeight="399.0" prefWidth="302.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="396.0" prefWidth="299.0">
+               <children>
+                  <TableView fx:id="tvEstudiantes" prefHeight="399.0" prefWidth="302.0">
+                    <columns>
+                      <TableColumn fx:id="ctMatricula" prefWidth="66.0" text="Matricula" />
+                      <TableColumn fx:id="ctNombre" prefWidth="107.0" text="Nombre" />
+                        <TableColumn fx:id="ctApellidoPat" prefWidth="128.0" text="Apellido paterno" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Pane layoutX="329.0" layoutY="57.0" prefHeight="381.0" prefWidth="390.0">
+         <children>
+            <Label fx:id="lbNombreAlumno" layoutX="7.0" layoutY="8.0" text="Seleccione un alumno">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbFechaEntrega" layoutX="7.0" layoutY="33.0" text="Fecha de entrega: " />
+            <TextArea fx:id="tfDescripcionEntrega" editable="false" layoutX="5.0" layoutY="67.0" prefHeight="160.0" prefWidth="381.0" wrapText="true" />
+            <Label layoutX="7.0" layoutY="50.0" text="Descripción de entrega: " />
+            <ImageView fx:id="ivArchivo" disable="true" fitHeight="54.0" fitWidth="66.0" layoutX="327.0" layoutY="231.0" onMouseClicked="#clicDescargar" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../Imagenes/archivoIcono.png" />
+               </image></ImageView>
+            <Button fx:id="btAdjuntar" disable="true" layoutX="5.0" layoutY="233.0" mnemonicParsing="false" onAction="#clicAdjuntar" text="Adjuntar archivo" visible="false" />
+            <Button fx:id="btCalificar2" disable="true" layoutX="7.0" layoutY="342.0" mnemonicParsing="false" onAction="#confirmarCalificacion" text="Calificar" visible="false" />
+            <Label fx:id="lbNombreArchivo" layoutX="7.0" layoutY="258.0" />
+            <TextField fx:id="tfCalificacion" editable="false" layoutX="354.0" layoutY="38.0" prefHeight="25.0" prefWidth="32.0" />
+            <Label layoutX="288.0" layoutY="42.0" text="Calificación: " />
+            <Button fx:id="btCancelar" disable="true" layoutX="78.0" layoutY="342.0" mnemonicParsing="false" onAction="#clicCancelar" text="Cancelar" visible="false" />
+         </children>
+      </Pane>
+      <Button layoutX="340.0" layoutY="20.0" mnemonicParsing="false" onAction="#clicVolver" text="Volver" />
+      <Button fx:id="btCalificar" layoutX="401.0" layoutY="20.0" mnemonicParsing="false" onAction="#clicCalificar" text="Calificar" />
+   </children>
+</AnchorPane>

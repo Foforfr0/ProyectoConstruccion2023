@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="916.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controllers.EntregasActividadController">
+   <children>
+      <Label fx:id="lbTitulo" layoutX="323.0" layoutY="14.0" text="Entregas de la actividad">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="85.0" layoutY="97.0" prefHeight="386.0" prefWidth="746.0">
+         <content>
+            <GridPane fx:id="grid" prefHeight="103.0" prefWidth="325.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="85.0" layoutY="526.0" mnemonicParsing="false" onAction="#btnVolver" prefHeight="31.0" prefWidth="132.0" text="Volver" />
+   </children>
+</AnchorPane>

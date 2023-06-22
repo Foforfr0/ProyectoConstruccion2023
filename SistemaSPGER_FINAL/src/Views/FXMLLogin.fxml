@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLLoginController">
+   <children>
+      <Pane prefHeight="456.0" prefWidth="324.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView cacheHint="SCALE" fitHeight="212.0" fitWidth="181.0" layoutX="72.0" layoutY="122.0" pickOnBounds="true">
+               <image>
+                  <Image url="/Imagenes/uv_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="82.0" layoutY="343.0" text="Sistema SPGER">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnVerificarConexion" text="Verificar" />
+         </children>
+      </Pane>
+      <Label layoutX="411.0" layoutY="68.0" text="Inicio de Sesión">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="137.0" text="Ingresa usuario y contraseña" />
+      <TextField fx:id="tfUsuario" layoutX="377.0" layoutY="196.0" prefHeight="25.0" prefWidth="209.0" promptText="Ejemplo: Emmanuel27" />
+      <PasswordField fx:id="tfPassword" layoutX="379.0" layoutY="266.0" prefHeight="25.0" prefWidth="209.0" promptText="*******" />
+      <Button layoutX="441.0" layoutY="343.0" mnemonicParsing="false" onAction="#clicBtnIniciarSesion" text="Iniciar sesión" />
+      <Label fx:id="lbErrorNoPersonal" layoutX="379.0" layoutY="220.0" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbErrorPassword" layoutX="379.0" layoutY="291.0" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="176.0" text="Usuario" textFill="#8a8888">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="249.0" text="Constraseña" textFill="#8a8888">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

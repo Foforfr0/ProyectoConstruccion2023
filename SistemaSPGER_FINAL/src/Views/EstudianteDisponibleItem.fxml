@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="181.0" prefWidth="814.0" style="-fx-background-color: #3065AC; -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EstudianteDisponibleItemController">
+   <children>
+      <Button fx:id="idBtnAgregar" layoutX="486.0" layoutY="115.0" mnemonicParsing="false" onAction="#btnAgregar" text="Agregar" />
+      <Label fx:id="lbNombre" layoutX="73.0" layoutY="21.0" prefHeight="35.0" prefWidth="574.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="73.0" layoutY="95.0">
+         <image>
+            <Image url="@../Imagenes/estudianteIcono.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbMatricula" layoutX="168.0" layoutY="113.0" prefHeight="35.0" prefWidth="318.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

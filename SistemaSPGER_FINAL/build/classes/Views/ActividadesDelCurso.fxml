@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ActividadesDelCursoController">
+   <children>
+      <Label layoutX="290.0" layoutY="14.0" text="Actividades del curso">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="81.0" layoutY="89.0" prefHeight="348.0" prefWidth="660.0">
+         <content>
+            <GridPane fx:id="gridPaneActividades" prefHeight="104.0" prefWidth="244.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="646.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnCrearActividad" text="Crear actividad" />
+      <Button fx:id="idBtnVolver" layoutX="81.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnVolver" prefHeight="25.0" prefWidth="95.0" text="Volver" />
+      <Button fx:id="idBtnConsultar" layoutX="385.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnConsultar" text="Consultar" />
+   </children>
+</AnchorPane>

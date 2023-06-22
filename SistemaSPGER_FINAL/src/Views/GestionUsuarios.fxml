@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="780.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GestionUsuariosController">
+   <children>
+      <ComboBox fx:id="cmbTipoUsuario" layoutX="62.0" layoutY="86.0" prefHeight="31.0" prefWidth="195.0" />
+      <Button layoutX="62.0" layoutY="715.0" mnemonicParsing="false" onAction="#btnVolver" prefHeight="25.0" prefWidth="78.0" text="Volver" />
+      <Button fx:id="btnNuevoUsuarioid" layoutX="328.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnNuevoUsuario" text="Registrar nuevo usuario" />
+      <Button layoutX="560.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnEliminarUsuario" prefHeight="25.0" prefWidth="142.0" text="Eliminar usuario" />
+      <Button layoutX="755.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnModificarUsuario" prefHeight="25.0" prefWidth="142.0" text="Modificar usuario" />
+      <TableView fx:id="tableUsuarios" layoutX="62.0" layoutY="142.0" prefHeight="542.0" prefWidth="835.0">
+        <columns>
+          <TableColumn fx:id="colMatricula" prefWidth="124.0" text="Matricula" />
+            <TableColumn fx:id="colNombre" prefWidth="133.0" text="Nombres" />
+            <TableColumn fx:id="colApellidoPaterno" prefWidth="155.0" text="Apellido Paterno" />
+            <TableColumn fx:id="colApellidoMaterno" prefWidth="186.0" text="Apellido Materno" />
+            <TableColumn fx:id="colTipoUsuario" prefWidth="161.0" text="Tipo de usuario" />
+        </columns>
+      </TableView>
+      <Label layoutX="62.0" layoutY="54.0" text="Seleccione un tipo de usuario" />
+   </children>
+</AnchorPane>
